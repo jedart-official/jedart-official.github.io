@@ -35,6 +35,8 @@ for ( let course_scroll_button of course_scroll) {
     course_scroll_button.addEventListener("click", function(e) {
         e.preventDefault();
         const id = course_scroll_button.getAttribute("href");
+        var hide_menu = document.getElementById("header_burger_menu").classList.remove("active")
+        var hide_icon = document.getElementById("header_burger_button").classList.remove("button_active");
         document.querySelector(id).scrollIntoView({
             behavior: "smooth",
             block: "start"

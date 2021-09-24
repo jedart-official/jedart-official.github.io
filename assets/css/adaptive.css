@@ -365,6 +365,7 @@
 
 .us_learn_title {
     text-align: left;
+    font-size: 36px;
 }
 
 .image_container {
@@ -408,5 +409,9 @@
 }
 
 /* ------------------------------------------- */
+
+.footer .container {
+    padding: 0 10px;
+}
 
 }
