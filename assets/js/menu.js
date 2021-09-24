@@ -21,9 +21,7 @@ up_scroll.addEventListener("click", up_to)
 
 
 function up_to() {
-    var top, time
-    top = document.body.scrollTop || window.pageYOffset;
-    time =setInterval(function(){if(top>0)window.scroll(0,top-=5);else clearInterval(time)},1);
+   window.scrollTo(pageYOffset, 0)
 }
 
 function getMenu() {

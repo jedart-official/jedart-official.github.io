@@ -1,5 +1,8 @@
 
 /* main peace */
+html {
+    scroll-behavior: smooth;
+  }
 
 .wrapper {
     max-width: 1440px;
