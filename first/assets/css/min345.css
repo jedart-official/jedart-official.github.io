@@ -182,6 +182,9 @@
         margin-top: auto;
         
     }
+    .language {
+        display: none;
+    }
     .main-skill {
         width: 90%;
         margin-top: 25px;
