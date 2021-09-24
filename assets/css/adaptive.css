@@ -359,6 +359,13 @@
     justify-content: center;
     text-align: center;
 }
+.us_learn_text_container p{
+    font-size: 18px;
+}
+
+.us_learn_title {
+    text-align: left;
+}
 
 .image_container {
     max-width: 250px;
