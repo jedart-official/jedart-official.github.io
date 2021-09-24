@@ -1,0 +1,347 @@
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url("/assets/fonts/fonts/gilroy-bold.eot"); /* IE 9 Compatibility Mode */
+	src: url('/assets/fonts/fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('/assets/fonts/fonts/gilroy-bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('/assets/fonts/fonts/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('/assets/fonts/fonts/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('/assets/fonts/fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Gilroy-Medium';
+	src: url('/assets/fonts/fonts/gilroy-medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('/assets/fonts/fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('/assets/fonts/fonts/gilroy-medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('/assets/fonts/fonts/gilroy-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('/assets/fonts/fonts/gilroy-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('/assets/fonts/fonts/gilroy-medium.svg#gilroy-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.wrapper-container {
+    max-width: 940px;
+    min-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 105px;
+}
+
+
+nav > ul > li{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    list-style-type: none;
+}
+
+.header-container {
+    height: 100%;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    
+}
+
+
+
+.header-container a{
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: black;
+    font-family: "Gilroy-Bold";
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0 76px;
+    white-space: nowrap;
+
+}
+
+
+.header-wrapper {
+    padding-bottom: 0;
+}
+
+#elem-start {
+    padding-left: 0;
+}
+
+#elem-end {
+    padding-right: 0;
+}
+
+
+.text-container {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name {
+    font-family: 'Gilroy-Bold';
+    font-size: 47.3392px;
+    line-height: 59px;
+    margin-top: auto;
+    
+}
+.main-skill {
+    margin-top: 3em;
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.language {
+    margin-top: 2em;
+    transform: rotate(-90deg);
+    font-family: Gilroy-Bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.image-container {
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+.mini-image-container {
+    display: none;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.burger-header {
+    display: none;
+}
+
+
+
+
+
+
+.about-me-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-section .wrapper-container{
+    padding-bottom: 0;
+    max-width: 940px;
+}
+
+
+.about-me-container {
+    max-width: 485px;
+    text-align: center;
+}
+
+.about-me-title{
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.about-me-text-item {
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+
+
+
+
+
+.skills-section {
+    padding-top: 90px;
+    padding-bottom: 110px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.skills-section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-section-title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.skills-section-text-item {
+    margin-top: 70px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.skills-section-image-container {
+    display: flex;
+    margin-top: 85px;
+    justify-content: space-between;
+}
+
+.image-title {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-section-image-item {
+    padding: 0 35px;
+}
+
+
+.skills-section .wrapper-container {
+    padding-bottom: 0;
+}
+
+
+
+.portfolio-section {
+    padding-top: 110px;
+    padding-bottom: 95px;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-section.wrapper-container {
+    padding: 0;
+}
+
+.portfolio-section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-section-title {
+    display: flex;
+    justify-content: center;
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.portfolio-section-block-item {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-item-more {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+}
+
+.portfolio-section .wrapper-container{
+    padding-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    padding-top: 115px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-container {
+    width: 345px;
+    text-align: center;
+
+}
+
+.footer-title {
+    font-size: 34px;
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.footer-text-item {
+    margin-top: 50px;
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.footer-send-button {
+    width: 180.5px;
+    height: 42px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    font-family: "Gilroy-Bold";
+    font-size: 18px;
+    line-height: 22px;
+    box-shadow: black;
+}
+
+.footer-social-container {
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-botton-text-item {
+    margin-top: 45px;
+    color: #828282;
+    font-family: "Gilroy-Medium";
+    font-size: 14px;
+    line-height: 17px;
+}

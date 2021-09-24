@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('..assets/fonts/fonts/gilroy-bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('..assets/fonts/fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('..assets/fonts/fonts/gilroy-bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('..assets/fonts/fonts/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('..assets/fonts/fonts/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('..assets/fonts/fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
