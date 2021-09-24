@@ -1,0 +1,411 @@
+
+/* main peace */
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@font-face {
+    font-family: "Roboto" ;
+    src: url(/assets/font/Roboto-Bold.woff2) format('woff2');
+    font-weight: bold ;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto" ;
+    src: url(/assets/font/Roboto-Regular.woff2) format('woff2');
+    font-weight: normal ;
+    font-display: swap;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+body {
+    font-family: "Roboto";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 64px;
+}
+button {
+    cursor: pointer;
+}
+
+.up_scroll {
+    position: fixed;
+    transition: 1s;
+    bottom: 50px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url(/assets/image/up_scroll.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ---------- */
+.loaded .preloader {
+    display: none;
+  }
+
+.loaded_hiding .preloader {
+transition: 0.3s opacity;
+opacity: 0;
+}
+
+.preloader {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+
+.preloader_container {
+    display: flex;
+}
+
+.preloader span {
+    display: block;
+
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: #262FFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 8px 9px rgba(255, 255, 255, 0.25), inset -1px -5px 4px rgba(0, 0, 0, 0.25);
+}
+
+._1_nth {
+    animation-name: clock;
+    animation-duration: 0.425s;
+    Animation-iteration-count: infinite;
+    Animation-direction: alternate;
+    Animation-timing-function: ease-in-out;
+}
+
+._2_nth
+{
+    animation-name: clock_2;
+    animation-duration: 0.425s;
+    Animation-iteration-count: infinite;
+    Animation-direction: alternate;
+    Animation-timing-function: ease-in-out;
+}
+
+@keyframes clock{
+    0%{
+        transform: rotate(0) translateX(0);
+    }
+    100%{
+        transform: rotate(45deg) translateX(-100px);
+        
+    }
+}
+
+@keyframes clock_2 {
+    0%{
+        transform: rotate(0) translateX(0);
+    }
+    100%{
+        transform: rotate(-45deg) translateX(100px);
+        
+    }
+}
+
+
+
+/* header */
+
+.header_burger_button {
+    display: none;
+}
+
+.header_burger_menu {
+    display: none;
+}
+
+.header {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 36px 0;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+}
+
+.span_container {
+    padding-left: 30px;
+}
+
+.button_and_login {
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.course {
+    margin-left: 80px;
+}
+
+.course a:hover{
+    transition: 0.5s ;
+    color: #262FFF
+}
+.about_us {
+    margin-left: 80px;
+    margin-right: 10px;
+}
+
+.active {
+    top: 0;
+}
+.teacher_button {
+    cursor: pointer;
+    padding: 15px 60px;
+    background: #FFFFFF;
+    border: 3px solid #262FFF;
+    box-sizing: border-box;
+    border-radius: 143px;
+    margin-right: 95px;
+}
+
+.teacher_button:hover {
+    transition: 0.4s;
+    background-color: #262FFF;
+    color: #FFFFFF;
+}
+
+/* -------------------------------- */
+
+
+/* ------------prewiew section---------------- */
+
+
+.blue_back {
+    background: linear-gradient(269.64deg, #262FFF 41.87%, rgba(0, 11, 255, 0) 139.13%);
+    padding-bottom: 120px;
+}
+
+.prewiew_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prewiew_text_container {
+    padding-top: 60px;
+    max-width: 600px;
+    color: white
+}
+
+.prewiew_text_container h1 {
+    font-weight: 700;
+}
+
+.prewiew_text_container p {
+    margin-top: 50px;
+    font-size: 24px;
+    line-height: 37.5px;
+}
+
+/* ---------------------------------------------- */
+
+
+/* ---------------------- SKILLS SECTION ---------------------- */
+
+.skills {
+    padding: 120px 0;
+}
+
+.skills_title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 64px;
+}
+
+.skills_container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.skills_item {
+    max-width: 230px;
+}
+
+.skills_item_title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 20px;
+    line-height: 42px;
+}
+
+.skills_item_text {
+    font-weight: 500;
+    font-size: 24px;
+    color: #7C7C7C;
+    line-height: 26.44px;
+    margin-top: 20px;
+}
+
+/* ----------------------------------------- */
+
+
+/* ------------------ US LEARN SECTION ------------------ */
+
+.us_learn_text_container {
+    padding-top: 100px;
+    max-width: 600px;
+    color: white
+}
+
+.us_learn_text_container h1 {
+    font-weight: 700;
+}
+
+.us_learn_text_container p {
+    margin-top: 50px;
+    font-size: 24px;
+    line-height: 37.5px;
+}
+
+.us_learn_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.us_learn {
+    padding-bottom: 100px;
+}
+
+/* ----------------------------------------------------------- */
+
+
+/* -------------------- GET START ---------------------------- */
+
+.get_start {
+    padding: 120px 0;
+}
+
+.get_start_title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 64px;
+}
+
+.get_start_block_container {
+    margin-top: 100px;
+    display: flex;
+    flex-flow:wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.get_start_block {
+    margin-bottom: 60px;
+    min-width: 45%;
+    padding: 25px 0;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    line-height: 42px;
+    box-sizing: border-box;
+}
+
+.n_1 {
+    background-color: #262FFF;
+    color: white;
+}
+
+.n_2 {
+    border: 3px solid #262FFF;
+    color: black;
+}
+
+.block_title{
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.start {
+    margin-top: 20px;
+    padding: 15px 65px;
+    border-radius: 25px;
+    border: none;
+    font-size: 24px;
+}
+
+.n_1 button {
+    background-color: white;
+}
+
+.n_2 button {
+    background-color: #262FFF;
+    color: white;
+}
+
+/* ---------------------------------------------------- */
+
+
+/* ------------------------- FOOTER ------------------- */
+
+.footer  .container {
+    display: flex;
+    padding: 100px 50px;
+    color: white;
+    justify-content: space-between;
+}
+
+.footer span {
+    max-width: 300px;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 56.59px;
+}
+
+.footer span p {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 37.72px;
+}
+
+input {
+    all: unset;
+  }
+
+/* --------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
