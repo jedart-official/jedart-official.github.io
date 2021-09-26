@@ -45,6 +45,7 @@ button {
 }
 
 .up_scroll {
+    cursor: pointer;
     position: fixed;
     transition: 1s;
     bottom: 50px;
@@ -359,6 +360,7 @@ opacity: 0;
     border-radius: 25px;
     border: none;
     font-size: 24px;
+    font-weight: 700;
 }
 
 .n_1 button {
