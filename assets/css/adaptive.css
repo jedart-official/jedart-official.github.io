@@ -227,6 +227,7 @@
 
 .active {
     top: 0;
+    position: fixed;
 }
 
 .button_active {

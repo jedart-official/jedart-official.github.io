@@ -328,7 +328,12 @@ opacity: 0;
 .get_start_block {
     margin-bottom: 60px;
     min-width: 45%;
-    padding: 25px 0;
+    padding-top: 30px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
     border-radius: 50px;
     font-weight: bold;
     font-size: 36px;
