@@ -73,7 +73,7 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    overflow: hidden;
+
     list-style: none;
     padding: 0;
     z-index: 1;
@@ -380,7 +380,6 @@ button.swiper-pagination-bullet {
 .swiper-scrollbar {
     border-radius: 10px;
     position: relative;
-    -ms-touch-action: none;
     background: rgba(0, 0, 0, .1);
 }
 .swiper-horizontal>.swiper-scrollbar {
