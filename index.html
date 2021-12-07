@@ -4,173 +4,381 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!------------------------------------------------------------------->
-    <link rel="stylesheet" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/adaptive.css">
-    <link rel="shortcut icon" href="/assets/image/logo.svg" type="image/x-icon">
-    <!------------------------------------------------------------------->
-    <title>WEB COURSE</title>
+
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/style.css">
+
+   
+
+ 
+    <link rel="shortcut icon" type="image/x-icon" href="/svg/logo.svg" />
+
+    <title>Voleyboll</title>
 </head>
-
 <body>
-    <div class="preloader">
-        <div class="preloader_container">
-            <span class = "_1_nth"></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class = "_2_nth"></span>
-        </div>
+    <div class="mobile__header-menu">
+        <nav class = "mobile_menu">
+            <ul class = "mobile_menu__ul">
+                <li class="mobile_menu__li"> <a href = "/">Главная</a> </li>
+                <li class="mobile_menu__li"> <a href = "/">Игры</a></li>
+                <li class="mobile_menu__li"> <a href = "/team.html">Команда</a> </li>
+                <li class="mobile_menu__li"> <a href = "/statistics.html">Статистика</a></li>
+                <li class="mobile_menu__li"> <a href = "/">Документы</a></li>
+            </ul>
+        </nav>
     </div>
-
-    <div class="up_scroll" id = "up_scroll"></div>
-
-    <div class="header_burger_menu" id = "header_burger_menu">
-        <span class = "burger_title">Logotype</span>
-        <div class="burger_menu_container">
-            <nav class="burger_nav">
-                <ul>
-                    <li class="burger_item"><a href="/login.html"  class = "burger_item_link">Вход</a></li>
-                    <li class="burger_item"><a href=""  class = "burger_item_link">Для преподавателей</a></li>
-                    <li class="burger_item"><a href="#get_start" class = "burger_item_link">Курсы</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-
-    <header class="header">
-        <div class="span_container">
-            <span class = "header_logo"> <a href="/"> Logotype</a> </span>
-            <span class = "course"> <a href = "#get_start">Курсы</a></span>
-        </div>
-        <div class="button_and_login">
-            <button class="teacher_button">
-                Для преподавателей
-            </button>
-            <a href="/login.html" class="login">
-                <img src="/assets/image/people 1.svg" alt="login_image">
-            </a>
-        </div>
-        <div class = "header_burger_button" id = "header_burger_button">
-            <span></span>
+    <header class = "mobile__header">
+        <div class="container">
+            <div class="header__logo">
+                <div class="logo">
+                    <a href = "/" ><img src="/svg/logo.svg" alt=""></a>
+                </div>
+                <div class="name">
+                   <a href = "/">Школьная <br> волейбольная лига</a> 
+                </div>
+            </div>
+            <div class="burger__container">
+                <div class="mobile__header-burger">
+                    <span></span>
+                </div>
+            </div>
         </div>
     </header>
-
-    <div class="wrapper">
-        <section class="prewiew blue_back">
-            <div class="container">
-                <div class="prewiew_content">
-                    <div class="prewiew_text_container">
-                        <h1 class = "prewiew_title">Добро пожаловать на курсы</h1>
-                        <p>Безусловно, укрепление и развитие внутренней  структуры говорит о возможностях системы   обучения кадров, соответствующей насущным  потребностям. Диаграммы связей будут в равно степени предоставлены сами себе.</p>
+    <div class="container">
+        <header class = "header">
+                <div class="header__logo">
+                    <div class="logo">
+                        <a href = "/" ><img src="/svg/logo.svg" alt=""></a>
                     </div>
-                    <div class="image-container">
-                        <img src="/assets/image/html 1.svg" width="100%" alt="">
+                    <div class="name">
+                       <a href = "/">Школьная <br> волейбольная лига</a> 
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <nav class = "menu">
+                        <ul class = "menu__ul">
+                            <li class="menu__li"> <a href = "/">Главная</a> </li>
+                            <li class="menu__li"> <a href = "/">Игры</a></li>
+                            <li class="menu__li"> <a href = "/team.html">Команда</a> </li>
+                            <li class="menu__li"> <a href = "/statistics.html">Статистика</a></li>
+                            <li class="menu__li"> <a href = "/">Документы</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </header>
+  
+
+    <section class="news">
+            <div class="first__block">
+                <div class="main__news">
+                    <div class="img__news">
+                        <div class =  "img__news-block">
+                            <img  class = "picture__news" src="/img/news.png" alt="">
+                        </div>
+                        <div class="title__news">
+                            Волейбольная команда сыграла со счетом 2:0 в матче с российской сборной
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+           
+            <div class="all__news">
+                <div class="all__news_titles">
+                    <span>Новости</span>
+                    <span><a href = "/">Больше</a></span>
+                </div>
+                <div class="news__all">
+                    <div class="news__all_container">
+                        <div class="news__all_img">
+                            <img class = "news__picture" src="/img/photo.png" alt="">
+                        </div>
+                        <div class="news_all_info">
+                            <span class="date">16.04.2021</span>
+                            <span class="info">Волейбольная лига «Трудовые резервы» возобновляет проведение чемпионата с 8 ноября</span>
+                        </div>
+                    </div>
+                    <div class="news__all_container">
+                        <div class="news__all_img">
+                            <img class = "news__picture" src="/img/photo.png" alt="">
+                        </div>
+                        <div class="news_all_info">
+                            <span class="date">16.04.2021</span>
+                            <span class="info">Волейбольная лига «Трудовые резервы» возобновляет проведение чемпионата с 8 ноября</span>
+                        </div>
+                    </div>
+                    <div class="news__all_container">
+                        <div class="news__all_img">
+                            <img class = "news__picture" src="/img/photo.png" alt="">
+                        </div>
+                        <div class="news_all_info">
+                            <span class="date">16.04.2021</span>
+                            <span class="info">Волейбольная лига «Трудовые резервы» возобновляет проведение чемпионата с 8 ноября</span>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+ 
+        
+    </section>
 
-        <section class="skills">
-            <div class="container">
-                <div class="skills_title">Здесь вы получите</div>
-                <div class="skills_container">
-                    <div class="skills_item">
-                        <div class="skills_item_img">
-                            <img src="/assets/image/skill_1.svg" alt="skill_1">
+    <section class="next__match">
+        <div class="title">
+            Предстоящие матчи
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class=" match__block swiper-slide">
+                    <div class="match__info">
+                        <div class="first__team">
+                            <img src="/svg/logo.svg" alt="">
                         </div>
-                        <div class="skills_item_title">Изучение HTML</div>
-                        <div class="skills_item_text">Диаграммы связей будут в равной степени предоставлены сами себе.</div>
+                        <div class="first__team_mark">0</div>
+                        <span>:</span>
+                        <div class="second__team-mark">0</div>
+                        <div class="second__team">
+                            <img src="/svg/logo.svg" alt="">
+                        </div>
                     </div>
-                    <div class="skills_item">
-                        <div class="skills_item_img">
-                            <img src="/assets/image/skill_2.svg" alt="skill_2">
-                        </div>
-                        <div class="skills_item_title">Изучение CSS 3</div>
-                        <div class="skills_item_text">Диаграммы связей будут в равной степени предоставлены сами себе.</div>
+                    <hr>
+                    <div class="date">
+                        <span class="time"> 9:45</span>
+                        <span class="place">Здесь будет написан адрес игры место площадки. </span>
                     </div>
-                    <div class="skills_item">
-                        <div class="skills_item_img">
-                            <img src="/assets/image/skill_3.svg" alt="skill_3">
+                </div>
+                <div class=" match__block swiper-slide">
+                    <div class="match__info">
+                        <div class="first__team">
+                            <img src="/svg/logo.svg" alt="">
                         </div>
-                        <div class="skills_item_title">Изучение Javascript</div>
-                        <div class="skills_item_text">Диаграммы связей будут в равной степени предоставлены сами себе.</div>
+                        <div class="first__team_mark">0</div>
+                        <span>:</span>
+                        <div class="second__team-mark">0</div>
+                        <div class="second__team">
+                            <img src="/svg/logo.svg" alt="">
+                        </div>
                     </div>
-                    <div class="skills_item">
-                        <div class="skills_item_img">
-                            <img src="/assets/image/skill_4.svg" alt="skill_4   ">
+                    <hr>
+                    <div class="date">
+                        <span class="time"> 9:45</span>
+                        <span class="place">Здесь будет написан адрес игры место площадки. </span>
+                    </div>
+                </div>
+                <div class="match__block swiper-slide ">
+                    <div class="match__info">
+                        <div class="first__team">
+                            <img src="/svg/logo.svg" alt="">
                         </div>
-                        <div class="skills_item_title">Бесплатный доступ</div>
-                        <div class="skills_item_text">Диаграммы связей будут в равной степени предоставлены сами себе.</div>
+                        <div class="first__team_mark">0</div>
+                        <span>:</span>
+                        <div class="second__team-mark">0</div>
+                        <div class="second__team">
+                            <img src="/svg/logo.svg" alt="">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="date">
+                        <span class="time"> 9:45</span>
+                        <span class="place">Здесь будет написан адрес игры место площадки. </span>
+                    </div>
+                </div>
+                <div class=" match__block swiper-slide">
+                    <div class="match__info">
+                        <div class="first__team">
+                            <img src="/svg/logo.svg" alt="">
+                        </div>
+                        <div class="first__team_mark">0</div>
+                        <span>:</span>
+                        <div class="second__team-mark">0</div>
+                        <div class="second__team">
+                            <img src="/svg/logo.svg" alt="">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="date">
+                        <span class="time"> 9:45</span>
+                        <span class="place">Здесь будет написан адрес игры место площадки. </span>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section class="us_learn blue_back">
-            <div class="container">
-                <div class="us_learn_content">
-                    <div class="us_learn_text_container">
-                        <h1 class = "us_learn_title">Вас научат</h1>
-                        <p>Безусловно, укрепление и развитие внутренней структуры говорит о возможностях системы обучения кадров, соответствующей насущным потребностям. Диаграммы связей будут в равно степени предоставлены сами себе.</p>
+        </div>
+            
+ 
+    </section>
+
+    <section class="statistic">
+        <div class="title">
+            Статистика
+        </div>
+        <div class="statistics__container">
+            <div class="swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="table">
+                             <table>
+                                <tr>
+                                    <th>Команда</th>
+                                    <th>Игры</th> 
+                                    <th>Очки</th>
+                                </tr>
+                                <tr>
+                                    <td>Волейбол</td>
+                                    <td>3</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Волейбол</td>
+                                    <td>3</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Волейбол</td>
+                                    <td>3</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Волейбол</td>
+                                    <td>3</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Волейбол</td>
+                                    <td>3</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Волейбол</td>
+                                    <td>3</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Волейбол</td>
+                                    <td>3</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Волейбол</td>
+                                    <td>3</td>
+                                    <td>12</td>
+                                </tr>
+                       
+                            </table>
+                        </div>
                     </div>
-                    <div class="image_container">
-                        <img src="/assets/image/Vector.svg" width="100%" alt="">
+                </div>  
+            </div>
+            <div class="swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="table">
+                            <table>
+                                <tr>
+                                    <th>Команда</th>
+                                    <th>Игры</th> 
+                                    <th>Очки</th>
+                                </tr>
+                                <tr>
+                                    <td>Волейбол</td>
+                                    <td>3</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Волейбол</td>
+                                    <td>3</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Волейбол</td>
+                                    <td>3</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Волейбол</td>
+                                    <td>3</td>
+                                    <td>12</td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+        
+    </section>
 
-        <section class="get_start" id = "get_start">
-            <div class="container">
-                <div class="get_start_title">Начните свое изучение</div>
-                <div class="get_start_block_container">
-                    <div class="get_start_block n_1">
-                        <div class="block_title"> HTML</div>
-                        <button class="start">
-                            Начать
-                        </button>
+    <section class="photos">
+        <div class="title">
+            Фотографии
+        </div>
+        <div class="swiper1">
+            <div class="swiper-wrapper">
+                <div class="photo__block swiper-slide">
+                    <img class = " photo__img" src="/img/photo.png" alt="">
+                </div>
+                <div class="photo__block photo__block-mini swiper-slide">
+                    <div class="photo__block-first">
+                        <img class = "photo__img" src="/img/photo.png" alt="">
                     </div>
-                    <div class="get_start_block n_2">
-                        <div class="block_title"> CSS </div>
-                        <button class="start">
-                            Начать
-                        </button>
+                    <div class="photo__block-second">
+                        <img class = "photo__img" src="/img/photo.png" alt="">
                     </div>
-                    <div class="get_start_block n_2">
-                        <div class="block_title"> Javascript
-                            </div>
-                        <button class="start">
-                            Начать
-                        </button>
+                </div>
+                <div class=" photo__block swiper-slide">
+                    <img class = "photo__img" src="/img/photo.png" alt="">
+                </div>
+                <div class=" photo__block photo__block-mini swiper-slide">
+                    <div class="photo__block-first">
+                        <img class = "photo__img" src="/img/photo.png" alt="">
                     </div>
-                    <div class="get_start_block n_1">
-                        <div class="block_title">Практика</div>
-                        <button class="start">
-                            Начать
-                        </button>
+                    <div class="photo__block-second">
+                        <img class = "photo__img" src="/img/photo.png" alt="">
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+            <div class="swiper-pagination1"></div>
+            <div class="swiper-button-prev1"></div>
+            <div class="swiper-button-next1"></div>
+        </div>
 
-    <footer class="footer blue_back">
-        <div class="container"> 
-            <span> Сведения
-                <p>Безусловно, укрепление и развитие внутренней структуры говорит о возможностях системы обучения кадров, соответствующей насущным потребностям. </p>
-            </span>
-            <span> Сведения
-                <p>Безусловно, укрепление и развитие внутренней структуры говорит о возможностях системы обучения кадров, соответствующей насущным потребностям. </p>
-            </span>
-            <span> Сведения
-                <p>Безусловно, укрепление и развитие внутренней структуры говорит о возможностях системы обучения кадров, соответствующей насущным потребностям. </p>
-            </span>
+    </section>
+
+    <section class="about__us">
+        <div class="title">
+            О нашей волейбольной команде
+        </div>
+        <div class="about__us_text">
+            <br>
+            <br>
+            И нет сомнений, что реплицированные с зарубежных источников, современные исследования освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, объявлены нарушающими общечеловеческие нормы этики и морали. Вот вам яркий пример современных тенденций - базовый вектор развития, в своём классическом представлении, допускает внедрение модели развития. 
+            <br>
+            <br>
+            Каждый из нас понимает очевидную вещь: внедрение современных методик не оставляет шанса для системы массового участия. Мы вынуждены отталкиваться от того, что глубокий уровень погружения способствует повышению качества системы массового участия. Как уже неоднократно упомянуто, предприниматели в сети интернет представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть заблокированы в рамках своих собственных рациональных ограничений.
+            <br>
+            <br>
+            Вот вам яркий пример современных тенденций - высокотехнологичная концепция общественного уклада является качественно новой ступенью первоочередных требований. А ещё сторонники тоталитаризма в науке, превозмогая сложившуюся непростую экономическую ситуацию, призваны к ответу.
+        </div>
+    </section>
+</div>
+    <footer class="footer">
+        <div class=" container footer__container">
+            <div class="footer__text">Все права защищены. Авторское право 2021 год</div>
+            <div class="footer__society">
+                <div class="instagram">
+                    <img src="/svg/insta.svg" alt="" width= "30px">
+                </div>
+                <div class="youtube">
+                    <img src="/svg/youtube.svg" alt="" width= "30px">
+                </div>
+                <div class="vk">
+                    <img src="/svg/facebook.svg" alt="" width= "30px">
+                </div>
+            </div>
         </div>
     </footer>
 
-    <script src="/assets/js/menu.js"></script>
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 </html>

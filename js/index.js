@@ -1,3 +1,14 @@
+let burger = document.querySelector(".burger__container")
+let windowOuterWidth = window.outerWidth
+let menu = document.querySelector(".mobile__header-menu")
+burger.addEventListener("click", burger_menu)
+
+
+function burger_menu(){
+  menu.classList.toggle("active");
+}
+
+
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
@@ -75,3 +86,42 @@ const swiper1 = new Swiper('.swiper1', {
 
 });
 
+if (windowOuterWidth <= 500) {
+  let swiper2 = new Swiper('.swiper2', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 0.5,
+    freeMode: true,
+  });
+
+
+
+}
+
+
+if (windowOuterWidth <= 780) {
+  let swiper3 = new Swiper('.swiper3', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 0.3,
+    freeMode: true,
+
+    breakpoints: {
+      768: {
+        slidesPerView: 0.5,
+      },
+      425: {
+        slidesPerView: 0.3,
+      },
+      320: {
+        slidesPerView: 0.2,
+      }
+
+    }
+
+
+  });
+
+
+
+}
