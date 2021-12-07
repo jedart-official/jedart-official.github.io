@@ -1,0 +1,53 @@
+
+
+
+.container {
+    padding: 0 30px;
+}
+
+
+.statistics__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: unset;
+}
+
+.table {
+    width: 100%;
+    margin-top: 50px;
+    background-color: #1A50BA;
+    border-radius: 15px;
+    height: 100%;
+
+    padding-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+}
+
+th{
+    padding: 10px 0;
+    font-size: 24px;
+    text-align: left;
+    background-color:rgba(76, 122, 213, 0.8)
+}
+
+tr:hover {
+    background-color: #1e5bd4;
+}
+
+th,td {
+    padding: 15px 40px;
+}
+
+td {
+    font-size: 18px;
+    padding: 20px 40px;
+}
+
+
+
+

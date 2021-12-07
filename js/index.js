@@ -3,20 +3,36 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 3,
+  freeMode: true,
+
+  breakpoints: {
+    1440: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    720: {
+      slidesPerView: 2,
+    },
+    425: {
+      slidesPerView: 1,
+    },
+    320: {
+      slidesPerView: 1,
+    },
+  
+  },
+
+  // Navigation arrows
+
 
   
 
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
 
-  pagination: {
-    el: '.swiper-pagination',
-  },
 
+ 
 
 
 });
@@ -28,6 +44,27 @@ const swiper1 = new Swiper('.swiper1', {
   slidesPerView: 3,
   freeMode: true,
   
+  breakpoints: {
+    1440: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    720: {
+      slidesPerView: 2,
+    },
+    425: {
+      slidesPerView: 1,
+    },
+    320: {
+      slidesPerView: 1,
+    },
+  
+  },
+  
+  
+
   navigation: {
     nextEl: '.swiper-button-next1',
     prevEl: '.swiper-button-prev1',
