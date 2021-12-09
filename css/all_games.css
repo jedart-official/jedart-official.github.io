@@ -1,0 +1,32 @@
+.all__games-container {
+    margin-top: 50px;
+
+    width: 100%;
+    height: 100%;
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.match__block {
+    background: #1949aa;
+    max-width: 380px;
+    border-radius: 0;
+    height: 200px;
+    margin: 0 0px;
+    margin-top: 20px;
+    padding: 20px 20px;
+
+}
+
+.match__block:hover {
+    background-color: #1A50BA;
+}
+
+@media (max-width: 770px){
+
+    .match__block {
+        max-width: 100%;
+    }
+}

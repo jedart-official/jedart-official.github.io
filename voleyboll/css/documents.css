@@ -1,0 +1,38 @@
+.documents__container {
+    margin-top: 50px;
+    background-color: #4827c0;
+}
+
+.documents__block {
+    padding: 20px 30px;
+    display: flex;
+    height: 70px;
+    max-width: 100%;
+    margin-top: 20px;
+    text-align: left;
+    align-items: center;
+}
+
+.documents__block:hover {
+    background-color: #512ece;
+}
+
+.documents__block-img {
+    height: 100%;
+    
+}
+
+.documents__block-img img{
+    height: 100%;
+}
+
+.documents__block-name {
+    margin-left: 20px;
+    max-width: 450px;
+    padding: 0 10px;
+}
+
+.documents__block-date {
+    margin-left: auto;
+    padding: 0 10px;
+}

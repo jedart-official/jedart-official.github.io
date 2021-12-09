@@ -41,7 +41,7 @@
 }
 .news__block-img img {
     margin: 0 auto;
-    width: 95%;
+    max-width: 100%;
     object-fit: cover;
 }
 
