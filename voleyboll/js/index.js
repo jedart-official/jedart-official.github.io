@@ -2,10 +2,11 @@ let burger = document.querySelector(".burger__container")
 let windowOuterWidth = window.outerWidth
 let menu = document.querySelector(".mobile__header-menu")
 burger.addEventListener("click", burger_menu)
-
+burger2 = document.querySelector(".mobile__header-burger")
 
 function burger_menu(){
   menu.classList.toggle("active");
+  burger2.classList.toggle("active2");
 }
 
 

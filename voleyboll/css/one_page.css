@@ -50,3 +50,12 @@
     
 }
 
+@media (max-width: 540px){
+    .one__block-inner {
+        padding: 20px;
+        padding-top: 10px;
+    }
+    .one__block-date, .one__block-title, .one__block-text {
+        margin-bottom: 20px;
+    }
+}

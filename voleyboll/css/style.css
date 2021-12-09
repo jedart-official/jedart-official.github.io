@@ -422,6 +422,8 @@ footer {
     
 }
 
+
+
 .swiper2{
     height: 100%;
     margin-top: 10px;
@@ -440,6 +442,11 @@ footer {
 
 
 
+@media (max-width: 1300px){
+    .main__news {
+        max-width: 700px;
+    }
+}
 
 @media (max-width: 1025px) {
 
@@ -611,7 +618,10 @@ footer {
     .mobile__header-menu {
         transition: 1s;
     }
-
+    .active2 {
+        position: fixed;
+        z-index: 12;
+    }
 }
 
  @media (max-width: 600px) {
