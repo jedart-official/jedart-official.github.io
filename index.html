@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/smartphoto.min.css"/>
     <link rel="stylesheet" href="/css/style.css">
 
    
@@ -21,7 +22,7 @@
         <nav class = "mobile_menu">
             <ul class = "mobile_menu__ul">
                 <li class="mobile_menu__li"> <a href = "/">Главная</a> </li>
-                <li class="mobile_menu__li"> <a href = "/all_games.html">Игры</a></li>
+                <li class="mobile_menu__li"> <a href = "/all_games.html">Расписание</a></li>
                 <li class="mobile_menu__li"> <a href = "/team.html">Команда</a> </li>
                 <li class="mobile_menu__li"> <a href = "/statistics.html">Статистика</a></li>
                 <li class="mobile_menu__li"> <a href = "/documents.html">Документы</a></li>
@@ -60,7 +61,7 @@
                     <nav class = "menu">
                         <ul class = "menu__ul">
                             <li class="menu__li"> <a href = "/">Главная</a> </li>
-                            <li class="menu__li"> <a href = "/all_games.html">Игры</a></li>
+                            <li class="menu__li"> <a href = "/all_games.html">Расписание</a></li>
                             <li class="menu__li"> <a href = "/team.html">Команда</a> </li>
                             <li class="menu__li"> <a href = "/statistics.html">Статистика</a></li>
                             <li class="menu__li"> <a href = "/documents.html">Документы</a></li>
@@ -158,7 +159,7 @@
                 <div class="main__news">
                     <div class="img__news">
                         <div class =  "img__news-block">
-                            <img  class = "picture__news" src="/img/news.png" alt="">
+                            <img  class = "picture__news " src="/img/news.png" alt="">
                         </div>
                         <div class="title__news">
                             Волейбольная команда сыграла со счетом 2:0 в матче с российской сборной
@@ -168,39 +169,41 @@
             </div>
            
             <div class="all__news">
-                <div class="all__news_titles">
-                    <span>Новости</span>
-                    <span><a href = "/news.html">Больше</a></span>
-                </div>
-                <div class="news__all">
-                    <div class="news__all_container">
-                        <div class="news__all_img">
-                            <img class = "news__picture" src="/img/photo.png" alt="">
-                        </div>
-                        <div class="news_all_info">
-                            <span class="date">16.04.2021</span>
-                            <span class="info">Волейбольная лига «Трудовые резервы» возобновляет проведение чемпионата с 8 ноября</span>
-                        </div>
+                <div class="all__news-inner">
+                    <div class="all__news_titles">
+                        <span>Новости</span>
+                        <span><a href = "/news.html">Больше</a></span>
                     </div>
-                    <div class="news__all_container">
-                        <div class="news__all_img">
-                            <img class = "news__picture" src="/img/photo.png" alt="">
+                    <div class="news__all">
+                        <div class="news__all_container">
+                            <div class="news__all_img">
+                                <img class = "news__picture" src="/img/photo.png" alt="">
+                            </div>
+                            <div class="news_all_info">
+                                <span class="date">16.04.2021</span>
+                                <span class="info">Волейбольная лига «Трудовые резервы» возобновляет проведение чемпионата с 8 ноября</span>
+                            </div>
                         </div>
-                        <div class="news_all_info">
-                            <span class="date">16.04.2021</span>
-                            <span class="info">Волейбольная лига «Трудовые резервы» возобновляет проведение чемпионата с 8 ноября</span>
+                        <div class="news__all_container">
+                            <div class="news__all_img">
+                                <img class = "news__picture" src="/img/photo.png" alt="">
+                            </div>
+                            <div class="news_all_info">
+                                <span class="date">16.04.2021</span>
+                                <span class="info">Волейбольная лига «Трудовые резервы» возобновляет проведение чемпионата с 8 ноября</span>
+                            </div>
                         </div>
+                        <div class="news__all_container">
+                            <div class="news__all_img">
+                                <img class = "news__picture" src="/img/photo.png" alt="">
+                            </div>
+                            <div class="news_all_info">
+                                <span class="date">16.04.2021</span>
+                                <span class="info">Волейбольная лига «Трудовые резервы» возобновляет проведение чемпионата с 8 ноября</span>
+                            </div>
+                        </div>
+                        <hr>
                     </div>
-                    <div class="news__all_container">
-                        <div class="news__all_img">
-                            <img class = "news__picture" src="/img/photo.png" alt="">
-                        </div>
-                        <div class="news_all_info">
-                            <span class="date">16.04.2021</span>
-                            <span class="info">Волейбольная лига «Трудовые резервы» возобновляет проведение чемпионата с 8 ноября</span>
-                        </div>
-                    </div>
-                    <hr>
                 </div>
             </div>
  
@@ -338,9 +341,6 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination1"></div>
-            <div class="swiper-button-prev1"></div>
-            <div class="swiper-button-next1"></div>
         </div>
 
     </section>
@@ -363,7 +363,41 @@
     </section>
 </div>
     <footer class="footer">
-        <div class=" container footer__container">
+        <div class="container footer__container">
+            <div class="footer__partners">
+                <div class="footer__partners-block">
+                    <div class="partners__logo">
+                        <img src="/svg/logo.svg" alt="">
+                    </div>
+                    <div class="partners__name">
+                        <p>
+                            Динамо-Метар, "Федерацию волейбола Челябинской области"
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__partners-block">
+                    <div class="partners__logo">
+                        <img src="/svg/logo.svg" alt="">
+                    </div>
+                    <div class="partners__name">
+                        <p>
+                            Динамо-Метар, "Федерацию волейбола Челябинской области"
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__partners-block">
+                    <div class="partners__logo">
+                        <img src="/svg/logo.svg" alt="">
+                    </div>
+                    <div class="partners__name">
+                        <p>
+                            Динамо-Метар, "Федерацию волейбола Челябинской области"
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
             <div class="footer__text">Все права защищены. Авторское право 2021 год</div>
             <div class="footer__society">
                 <div class="instagram">
@@ -380,6 +414,7 @@
     </footer>
 
     <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/smartphoto.js"></script>
     <script src="/js/index.js"></script>
 </body>
 </html>

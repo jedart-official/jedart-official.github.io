@@ -2,6 +2,7 @@
 
 .news {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .news__block {

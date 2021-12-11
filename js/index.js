@@ -4,6 +4,9 @@ let menu = document.querySelector(".mobile__header-menu")
 burger.addEventListener("click", burger_menu)
 burger2 = document.querySelector(".mobile__header-burger")
 
+
+
+
 function burger_menu(){
   menu.classList.toggle("active");
   burger2.classList.toggle("active2");
@@ -36,17 +39,6 @@ const swiper = new Swiper('.swiper', {
   
   },
 
-  // Navigation arrows
-
-
-  
-
-
-
-
- 
-
-
 });
 
 const swiper1 = new Swiper('.swiper1', {
@@ -75,15 +67,6 @@ const swiper1 = new Swiper('.swiper1', {
   
   },
   
-  
-
-  navigation: {
-    nextEl: '.swiper-button-next1',
-    prevEl: '.swiper-button-prev1',
-  },
-
-
-
 
 });
 
@@ -126,3 +109,33 @@ if (windowOuterWidth <= 780) {
 
 
 }
+
+
+if (windowOuterWidth <= 780) {
+  let swiper3 = new Swiper('.swiper4', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 0.3,
+    freeMode: true,
+
+    breakpoints: {
+      768: {
+        slidesPerView: 0.5,
+      },
+      425: {
+        slidesPerView: 0.3,
+      },
+      320: {
+        slidesPerView: 0.2,
+      }
+
+    }
+
+
+  });
+
+
+
+}
+
+
