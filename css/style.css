@@ -324,7 +324,16 @@ td {
 
 
 
+.photos .title {
+    display: flex;
+    justify-content: space-between;
 
+}
+
+.photos .title a {
+    font-size: 24px;
+    margin-top: auto;
+}
 
 .photos__container {
     width: 100%;

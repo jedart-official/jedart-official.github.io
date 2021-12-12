@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="/css/smartphoto.min.css"/>
     <link rel="stylesheet" href="/css/style.css">
 
-   
-
- 
     <link rel="shortcut icon" type="image/x-icon" href="/svg/logo.svg" />
 
     <title>Voleyboll</title>
@@ -175,33 +172,39 @@
                         <span><a href = "/news.html">Больше</a></span>
                     </div>
                     <div class="news__all">
-                        <div class="news__all_container">
-                            <div class="news__all_img">
-                                <img class = "news__picture" src="/img/photo.png" alt="">
+                        <a href = "/one_page.html">
+                            <div class="news__all_container">
+                                <div class="news__all_img">
+                                    <img class = "news__picture" src="/img/photo.png" alt="">
+                                </div>
+                                <div class="news_all_info">
+                                    <span class="date">16.04.2021</span>
+                                    <span class="info">Волейбольная лига «Трудовые резервы» возобновляет проведение чемпионата с 8 ноября</span>
+                                </div>
                             </div>
-                            <div class="news_all_info">
-                                <span class="date">16.04.2021</span>
-                                <span class="info">Волейбольная лига «Трудовые резервы» возобновляет проведение чемпионата с 8 ноября</span>
+                        </a>
+                        <a href = "/one_page.html">
+                            <div class="news__all_container">
+                                <div class="news__all_img">
+                                    <img class = "news__picture" src="/img/photo.png" alt="">
+                                </div>
+                                <div class="news_all_info">
+                                    <span class="date">16.04.2021</span>
+                                    <span class="info">Волейбольная лига «Трудовые резервы» возобновляет проведение чемпионата с 8 ноября</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="news__all_container">
-                            <div class="news__all_img">
-                                <img class = "news__picture" src="/img/photo.png" alt="">
+                        </a>
+                        <a href = "/one_page.html">
+                            <div class="news__all_container">
+                                <div class="news__all_img">
+                                    <img class = "news__picture" src="/img/photo.png" alt="">
+                                </div>
+                                <div class="news_all_info">
+                                    <span class="date">16.04.2021</span>
+                                    <span class="info">Волейбольная лига «Трудовые резервы» возобновляет проведение чемпионата с 8 ноября</span>
+                                </div>
                             </div>
-                            <div class="news_all_info">
-                                <span class="date">16.04.2021</span>
-                                <span class="info">Волейбольная лига «Трудовые резервы» возобновляет проведение чемпионата с 8 ноября</span>
-                            </div>
-                        </div>
-                        <div class="news__all_container">
-                            <div class="news__all_img">
-                                <img class = "news__picture" src="/img/photo.png" alt="">
-                            </div>
-                            <div class="news_all_info">
-                                <span class="date">16.04.2021</span>
-                                <span class="info">Волейбольная лига «Трудовые резервы» возобновляет проведение чемпионата с 8 ноября</span>
-                            </div>
-                        </div>
+                        </a>
                         <hr>
                     </div>
                 </div>
@@ -314,30 +317,45 @@
 
     <section class="photos">
         <div class="title">
-            Фотографии
+            <p>
+                Фотографии
+            </p>
+            <a href = "/gallery.html">Медиа</a>
         </div>
         <div class="swiper1">
             <div class="swiper-wrapper">
                 <div class="photo__block swiper-slide">
-                    <img class = " photo__img" src="/img/photo.png" alt="">
+                    <a href="/img/photo.png" class="js-img-viewer">
+                        <img class = "photo__img" src="/img/photo.png" alt="">
+                    </a>
                 </div>
                 <div class="photo__block photo__block-mini swiper-slide">
                     <div class="photo__block-first">
-                        <img class = "photo__img" src="/img/photo.png" alt="">
+                        <a href="/img/photo.png" class="js-img-viewer">
+                            <img class = "photo__img" src="/img/photo.png" alt="">
+                        </a>
                     </div>
                     <div class="photo__block-second">
-                        <img class = "photo__img" src="/img/photo.png" alt="">
+                        <a href="/img/photo.png" class="js-img-viewer">
+                            <img class = "photo__img" src="/img/photo.png" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class=" photo__block swiper-slide">
-                    <img class = "photo__img" src="/img/photo.png" alt="">
+                    <a href="/img/photo.png" class="js-img-viewer">
+                        <img class = "photo__img" src="/img/photo.png" alt="">
+                    </a>
                 </div>
                 <div class=" photo__block photo__block-mini swiper-slide">
                     <div class="photo__block-first">
-                        <img class = "photo__img" src="/img/photo.png" alt="">
+                        <a href="/img/photo.png" class="js-img-viewer">
+                            <img class = "photo__img" src="/img/photo.png" alt="">
+                        </a>
                     </div>
                     <div class="photo__block-second">
-                        <img class = "photo__img" src="/img/photo.png" alt="">
+                        <a href="/img/photo.png" class="js-img-viewer">
+                            <img class = "photo__img" src="/img/photo.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -416,5 +434,14 @@
     <script src="/js/swiper-bundle.min.js"></script>
     <script src="/js/smartphoto.js"></script>
     <script src="/js/index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+		const sm = new SmartPhoto(".js-img-viewer", {
+			showAnimation: false
+		});
+		// sm.destroy();
+	});
+    </script>
+
 </body>
 </html>

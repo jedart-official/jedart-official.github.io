@@ -7,15 +7,16 @@
 
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/smartphoto.min.css"/>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/one_page.css">
+    <link rel="stylesheet" href="/css/gallery.css">
 
    
 
  
     <link rel="shortcut icon" type="image/x-icon" href="/svg/logo.svg" />
 
-    <title>Новости</title>
+    <title>Команда</title>
 </head>
 <body>
     <div class="mobile__header-menu">
@@ -47,7 +48,6 @@
             </div>
         </div>
     </header>
-
     <div class="container">
         <header class = "header">
                 <div class="header__logo">
@@ -72,25 +72,64 @@
                 </div>
         </header>
     
-        <section class="one__news">
-           <div class="one__block">
-               <div class="one__block-inner">
-                   <div class="one__block-date">
-                       <p>28 января</p>
-                       <a href = "/news.html">Вернуться к новостям</a>
+        <section class="gallery">
+            <div class="title">
+                Медиа
+            </div>
+            <div class="gallery__container">
+                <div class="gallery-inner">
+                    <div class="gallery__block">
+                        <a href="/img/photo.png" class="js-img-viewer">
+                            <img class = "photo__img" src="/img/photo.png" alt="">
+                        </a>
                     </div>
-                    <div class="one__block-img">
-                        <img src="/img/news.png" alt="">
+                    <div class="gallery__block">
+                        <a href="/img/photo.png" class="js-img-viewer">
+                            <img class = "photo__img" src="/img/photo.png" alt="">
+                        </a>
                     </div>
-                    
-                    <div class="one__block-title">
-                        Школьная волейбольная лига
+                    <div class="gallery__block ">
+                        <a href="/img/photo.png" class="js-img-viewer">
+                            <img class = "photo__img" src="/img/photo.png" alt="">
+                        </a>
                     </div>
-                    <div class="one__block-text">
-                        Конкурс пройдёт в три этапа с 5 по 29 декабря. Имя первой в истории обладательницы титула «Мисс Волейбольная лига «Трудовые резервы» мы объявим 30 декабря 2021 года.Конкурс пройдёт в три этапа с 5 по 29 декабря. Имя первой в истории обладательницы титула «Мисс Волейбольная лига «Трудовые резервы» мы объявим 30 декабря 2021 года.Конкурс пройдёт в три этапа с 5 по 29 декабря. Имя первой в истории обладательницы титула «Мисс Волейбольная лига «Трудовые резервы» мы объявим 30 декабря 2021 года.Конкурс пройдёт в три этапа с 5 по 29 декабря. Имя первой в истории обладательницы титула «Мисс Волейбольная лига «Трудовые резервы» мы объявим 30 декабря 2021 года.
+                    <div class="gallery__block">
+                        <a href="/img/photo.png" class="js-img-viewer">
+                            <img class = "photo__img" src="/img/photo.png" alt="">
+                        </a>
                     </div>
-               </div>
-           </div>
+                    <div class="gallery__block ">
+                        <a href="/img/photo.png" class="js-img-viewer">
+                            <img class = "photo__img" src="/img/photo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery__block">
+                        <a href="/img/photo.png" class="js-img-viewer">
+                            <img class = "photo__img" src="/img/photo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery__block">
+                        <a href="/img/photo.png" class="js-img-viewer">
+                            <img class = "photo__img" src="/img/photo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery__block ">
+                        <a href="/img/photo.png" class="js-img-viewer">
+                            <img class = "photo__img" src="/img/photo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery__block">
+                        <a href="/img/photo.png" class="js-img-viewer">
+                            <img class = "photo__img" src="/img/photo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery__block ">
+                        <a href="/img/photo.png" class="js-img-viewer">
+                            <img class = "photo__img" src="/img/photo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
@@ -113,6 +152,16 @@
     </footer>
 
     <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/smartphoto.js"></script>
     <script src="/js/index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+		const sm = new SmartPhoto(".js-img-viewer", {
+			showAnimation: false
+		});
+		// sm.destroy();
+	});
+    </script>
+
 </body>
 </html>
