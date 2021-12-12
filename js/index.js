@@ -8,7 +8,7 @@ burger2 = document.querySelector(".mobile__header-burger")
 
 
 function burger_menu(){
-  menu.classList.toggle("active");
+  menu.classList.toggle("active_burger");
   burger2.classList.toggle("active2");
 }
 
