@@ -325,6 +325,9 @@
         height: 330px;
         margin-bottom: 30px;
     }
+    .famous-authors__name, .famous-authors__shortInfo {
+        text-align: center;
+    }
     .popular-block__info span{
         font-size: 18px;
     }

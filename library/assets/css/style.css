@@ -148,6 +148,10 @@ html {
     width: 90%;
     height: 600px;
   } 
+
+.recomendation {
+    padding-bottom: 5%;
+}
 .recomendation .content {
     display: flex;
     justify-content: center;
