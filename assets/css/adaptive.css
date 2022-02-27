@@ -144,8 +144,11 @@
 
 @media (max-width: 1024px) {
 
-
+    .header__li-drop-mobile {
+        transition: all 0.5s ease;
+    }
     
+
 
     .dropdown__menu {
         padding-top: 0;
@@ -215,7 +218,7 @@
         position: relative;
     }
     .header__menu-mobile ul li{
-        margin-bottom: 30px;
+        margin-top: 30px;
     }
     .header__menu-mobile ul li:last-child{
         margin-bottom: 0
@@ -353,6 +356,11 @@
 }
 
 @media (max-width: 500px) {
+
+
+    .dropdown__li {
+        padding: 10px 10px;
+    }
     .title {
         font-size: 18px;
     }
@@ -375,6 +383,10 @@
         width: 100%;
         align-items: center;
     }
+
+    .popular-title img, .famous-authors__title img{
+        height: 120px;
+    }
     
     .popular-block {
         width: 60%;
@@ -385,6 +397,7 @@
     .popular-block__img img{
         height: 300px;
     }
+    
     .famous-authors .content_block {
         margin: 0;
     }
