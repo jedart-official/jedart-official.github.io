@@ -1,26 +1,3 @@
-let dropwown = document.querySelector(".sort-form__button")
-let dropwownList = document.querySelector(".sort-form__list")
-let filterList = document.querySelector(".filters__list")
-dropwown.addEventListener("click", (e)=> {
-    if(dropwownList.classList.contains('showList')){
-        dropwownList.classList.remove("showList");
-        dropwownList.style.height = `0px`;
-    } else{
-        dropwownList.style.height = `${filterList.scrollHeight}px`;
-        dropwownList.classList.add("showList");
-    }
-})
-
-let filterChildren = Array.from(filterList.children)
-console.log(filterChildren);
-filterChildren.forEach(e => {
-    e.addEventListener('click',()=>{
-        let sortText = document.querySelector(".sort-text").innerText = e.innerText;
-        dropwownList.classList.remove("showList");
-        dropwownList.style.height = `0px`;
-    })
-});
-
 
 
 
@@ -30,3 +7,35 @@ burgerButton.addEventListener("click", ()=>{
     burgerMenu.classList.toggle("show")
     burgerButton.classList.toggle("active")
 })
+
+let headerMenuList =  document.querySelectorAll(".header__li-drop")
+let headerUl = document.querySelector(".dropdown__menu")
+
+headerMenuList.forEach(e => {
+    e.addEventListener("mouseenter", showSub, false);
+   e.addEventListener("mouseleave", hideSub, false);
+})
+
+
+function showSub(e) {
+    if(this.children.length>1) {
+       this.children[1].style.height = "auto";
+       this.children[1].style.overflow = "visible";
+       this.children[1].style.opacity = "0.9";
+    } else {
+       return false;
+    }
+ }
+
+ function hideSub(e) {
+    if(this.children.length>1) {
+      this.children[1].style.height = "0px";
+       this.children[1].style.overflow = "hidden";
+       this.children[1].style.opacity = "0";
+    } else {
+       return false;
+    }
+}
+
+
+

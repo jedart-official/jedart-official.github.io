@@ -97,8 +97,15 @@ html {
     position: relative;
 }
 .header__menu ul li{
+    position: relative;
     margin-right: 30px;
 }
+
+.header__li {
+    cursor: pointer;
+    display: block;
+}
+
 .header__menu ul li:last-child{
     margin-right: 0
 }
@@ -116,7 +123,7 @@ html {
     width: 100%;
 }
 .search-form {
-    width: 30%;
+    width: 25%;
     display: flex;
     gap: 10px;
 }
@@ -140,6 +147,69 @@ html {
     cursor: pointer;
     border: none;
     width: 30px;
+}
+
+
+
+
+
+.dropdown__menu {
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    height: 0;
+    width: 300px;
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.6s ease;
+    z-index: 1000;
+    background-color: #fdfdfb;
+    opacity: 0.7;
+}
+
+.dropdown__li {
+    font-size: 18px;
+    padding: 15px 10px;
+    margin-right: 0 !important;
+}
+
+.drop {
+    text-emphasis: none;;
+}
+
+.more {
+    display: none;
+    position: relative;
+}
+
+.more span {
+    position: absolute;
+    height: 8px;
+    bottom: 7px;
+    width: 8px;
+    left: 20px;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.more span::before {
+    left: 15px;
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.more span::after {
+    right: 15px;
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background-color: #000;
+    border-radius: 5px;
 }
 
 

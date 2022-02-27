@@ -9,6 +9,7 @@
     color: black;
     text-align: left;
     margin-bottom: 20px;
+    font-size: 48px;
 }
 .back_1 {
     background-image: url("/assets/img/back3.png");
@@ -40,6 +41,7 @@
 }
 
 .filters {
+    font-size: 18px;
     width: 30%;
 }
 .sort-form__container {
