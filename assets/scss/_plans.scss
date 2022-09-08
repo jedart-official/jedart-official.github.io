@@ -1,0 +1,140 @@
+.prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.section__short {
+    color: #767676;
+    max-width: 450px;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
+}
+.service {
+
+		// .service__title
+
+		&__title {
+		}
+
+		// .service__shor
+
+		&__shor {
+		}
+}
+.section {
+
+		// .section__title
+
+		&__title {
+		}
+
+		// .section__short
+
+		&__short {
+		}
+}
+.plans {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+        &__order {
+            font-size: 14px;
+            margin-top: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 10px 40px;
+            background-color: white;
+            border-radius: 15px;
+        }
+		// .plans_short
+
+		&__short {
+            color: #767676;
+            max-width: 450px;
+            text-align: center;
+            margin-top: 25px;
+            font-size: 15px;
+		}
+
+		// .plans__item
+
+		&__item {
+            max-width: 300px;
+            padding: 0 30px;
+            padding-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10px;
+            background-color: #1B1B1B;
+		}
+
+		// .plans__popular
+
+		&__popular {
+		}
+
+		// .plans__name
+
+		&__name {
+            margin-top: 55px;
+            font-size: 24px;
+            font-weight: bold;
+		}
+
+		// .plans__price
+
+		&__price {
+            font-size: 32px;
+            margin-top: 20px;
+		}
+
+		// .plans__info
+
+		&__info {
+            width: 100%;
+            margin-top: 20px;
+
+			// .plans__info_item
+
+			&_item {
+                
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                padding-bottom: 3px;
+			}
+
+			// .plans__info_describe
+
+			&_describe {
+			}
+		}
+
+		// .plans__check
+
+		&__check {
+            margin-right: 20px;
+		}
+}
+
+.active_info {
+    border-bottom: 1px solid white;
+    color: white;
+    &:last-child{
+        border-bottom: none;
+    }
+}
+
+.off__info {
+    border-bottom: 1px solid #b8b8b8;
+    color: #767676;
+    &:last-child{
+        border-bottom: none;
+    }
+}

@@ -1,0 +1,123 @@
+.feedback {
+    margin-top: 50px;
+    // .feedback__title
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    &__title {
+    }
+    &__button {
+        font-size: 14px;
+        background-color: #FFB400;
+        font-weight: bold;
+        width: 160px;
+        height: 35px;
+        color: white;
+        border: none;
+        
+        margin-top: 25px;
+    }
+    // .feedback__form
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        margin-top: 50px;
+        background-color: #242526;
+    }
+
+    // .feedback__label
+
+    &__label {
+    }
+
+    // .feedback__input
+
+    &__input {
+    }
+
+    // .feedback__information
+
+    &__information {
+        .section__title {
+            margin-bottom: 50px;
+        }
+    }
+
+    // .feedback__container
+
+    &__container {
+        
+    }
+
+    // .feedback__item
+    &__shape {
+        width: 50px;
+        height: 50px;
+        background-color: #FFB400;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        align-items: center;
+    }
+    &__item {
+        background-color: #242526;
+        padding: 36px 25px 15px 25px;
+        margin-bottom: 20px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        // .feedback__item_line
+
+        &_line {
+            display: flex;
+            margin-bottom: 15px;
+            justify-content: space-between;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__social {
+        margin-top: 30px;
+        span {
+            color: #767676;
+        }
+    }
+    // .feedback__img
+
+    &__img {
+    }
+}
+.left {
+    
+    // .left__form
+
+    &__form {
+        margin-right: 30px;
+        input {
+            background-color: #3A3B3C;
+            height: 50px;
+            border: none;
+            outline: none;
+            margin-top: 5px;
+            margin-bottom: 25px;
+            width: 520px;
+        }
+        label {
+            color: #767676;
+        }
+    }
+}
+.main-input {
+    height: 250px !important;
+}
+.section {
+
+    // .section__title
+
+    &__title {
+    }
+}

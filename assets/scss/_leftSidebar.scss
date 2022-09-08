@@ -1,0 +1,277 @@
+.left-sidebar {
+    width: 300px;
+    
+    background-color: #242526;
+    
+    
+    &__wrapper {
+        display: flex;
+        position: fixed;
+        overflow: scroll;
+        padding: 0 40px;
+        height: 100%;
+        z-index: 3;
+        flex-direction: column;
+        align-items: center;
+        background-color: #242526;
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+    }
+    &__profile {
+        margin-top: 52px;
+    }
+
+    // .left-sidebar__info
+
+    &__info {
+        padding-bottom: 25px;
+        border-bottom: 1.5px solid #3A3B3C;
+    }
+
+    // .left-sidebar__languages
+
+    &__languages {
+    }
+
+    // .left-sidebar__skills
+
+    &__skills {
+    }
+
+    // .left-sidebar__extraSkills
+
+    &__extraSkills {
+    }
+}
+.sidebar-profile {
+    
+    // .sidebar-profile__photo
+
+    &__photo {
+        img {
+            border-radius: 50%;
+        }
+    }
+}
+.sidebar-info {
+    
+    // .sidebar-info__name
+
+    &__name {
+        margin-top: 30px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+    }
+
+    // .sidebar-info__work
+
+    &__work {
+        margin-top: 15px;
+        text-align: center;
+        color: #767676;
+        font-size: 18px;
+    }
+
+    // .sidebar-info__social
+
+    &__social {
+        margin-top: 15px;
+       display: flex;
+    }
+    
+}
+
+.social-info__item {
+    margin-right: 15px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.left-sidebar {
+
+    // .left-sidebar__languages
+
+    &__infoBlock {
+        border-bottom: 1.5px solid #3A3B3C;
+        width: 100%;
+        padding-bottom: 25px;
+        margin: 25px 0;
+    }
+}
+.info-item {
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    color: white;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+    // .language-item__block
+    &:first-child{
+        margin-top: 0;
+    }
+    &__block {
+        background-color: #FFB400;
+        padding: 3px 7px;
+        
+        
+    }
+
+    // .language-item__value
+
+    &__value {
+    }
+}
+
+.left-sidebar {
+
+    // .left-sidebar__language
+
+    &__language {
+        border-bottom: 1.5px solid #3A3B3C;
+        width: 100%;
+        padding-bottom: 25px;
+        margin-bottom: 15px;
+    }
+}
+.sidebar-lagnguage {
+}
+.language-title {
+
+}
+.sidebar-title {
+    font-size: 18px;
+}
+.language-item {
+    margin-top: 15px;
+    // .language-item__top
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .language-item__name
+
+    &__name {
+    }
+
+    // .language-item__value
+
+    &__value {
+    }
+
+    // .language-item__bot
+
+    &__bot {
+        position: relative;
+    }
+
+    // .language-item__inner
+
+    &__inner {
+        margin-top: 5px;
+        width: 100%;
+        
+        border: 1px solid #FFB400;
+        height: 3px;
+    }
+
+    // .language-item__out
+
+    &__out {
+        width: 85%;
+        background-color: #FFB400;
+        height: 3px;
+    }
+}
+
+
+
+.left-sidebar {
+
+    // .left-sidebar__skills
+
+    &__skills {
+        border-bottom: 1.5px solid #3A3B3C;
+        width: 100%;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+    }
+}
+.skills-item {
+    margin: 25px 0;
+    // .skills-item__top
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .skills-item__name
+
+    &__name {
+    }
+
+    // .skills-item__value
+
+    &__value {
+    }
+
+    // .skills-item__bot
+
+    &__bot {
+    }
+
+    // .skills-item__inner
+
+    &__inner {
+        margin-top: 5px;
+        width: 100%;
+        
+        border: 1px solid #FFB400;
+        height: 3px;
+    }
+
+    // .skills-item__out
+
+    &__out {
+        width: 85%;
+        background-color: #FFB400;
+        height: 3px;
+    }
+}
+
+.left-sidebar {
+
+    // .left-sidebar__extraSkills
+
+    &__extraSkills {
+        border-bottom: 1.5px solid #3A3B3C;
+        width: 100%;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+    }
+}
+.extra-title {
+}
+.sidebar-title {
+}
+.extra-item {
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+    // .extra-item__picture
+
+    &__picture {
+        margin-right: 20px;
+    }
+
+    // .extra-item__value
+
+    &__value {
+    }
+}
